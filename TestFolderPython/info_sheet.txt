@@ -1,0 +1,57 @@
+========================================
+CS/COE 1520 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment. Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name: Trent Lessig
+
+Lecture section:  Tuesday/Thursday 6:00 - 7:15 p.m.
+
+Recitation day and time:  Thursday 7:30 - 8:20 p.m.
+
+Assignment #:  2
+
+Program due date:  October 16, 2019
+
+Handed in date:  October 16, 2019
+
+Source code file name(s):
+models.py
+catering.py
+Templates folder --> account.html, base.html, Login.html, Register.html, homeIndex.html
+Static folder --> style.css
+
+
+
+Other file name(s) (if relevant):
+catering.db (to be created using flask initdb)
+
+
+
+
+
+Does your project run without error?: Yes
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+
+
+
+
+
+
+
+Additional comments to the grader:
+I took the homeIndex redirect out of my catering.py file because I wanted
+to show "guests" the list of all scheduled events. I ran out of time, otherwise
+I would have attempted to inlcude an extra link for staff and customer to see 
+all schedule events
+
+
+
+
+
+

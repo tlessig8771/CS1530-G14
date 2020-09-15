@@ -1,0 +1,18 @@
+<!--Login.html -- Trent Lessig -- Have a user get logged in --  view aspect-->
+
+{% extends "base.html" %}
+
+{% block title %}Sign In Here{% endblock %}
+{% block body %}
+	<h3>Sign In</h3>
+	{% if error %}<div class = "error"><strong>ERROR:</strong> {{ error }}</div>{% endif %}
+		<form action="" method="post">
+			<dl>
+				<dt>Username:  
+				<dd><input type="text" name="username" placeholder="owner" size="30" value="owner"/> <!--have placeholders to make entry for user easier in beginning-->
+				<dt>Password: 
+				<dd><input type="password" name="password" size="30" placeholder="pass" value="pass" />
+			</dl>
+			<div class="actions"><input type="submit" value="Sign in" /></div>
+		</form>
+{% endblock %}
