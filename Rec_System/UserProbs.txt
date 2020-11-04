@@ -1,0 +1,7 @@
+2020-10-18 23:20:40.720746
+Bob
+Sports Probabilities
+{'Hockey': '0.0909', 'Football': '0.0909', 'NHL': '0.364', 'MLB': '0.182', 'NBA': '0.0909', 'MMA': '0.182'}
+Activities Probabilities
+{'Hiking': '0.333', 'Swimming': '0.222', 'Driving': '0.222', 'Fireworks': '0.111', 'Fighting': '0.111'}
+
