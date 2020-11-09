@@ -91,7 +91,7 @@ class AttractionForm(FlaskForm):
     address = StringField('Address', validators=[
         DataRequired(), Length(1, 100)])
     tags = StringField('Tags', validators=[Length(0,64)])
-    about_me = TextAreaField('About this attarction')
+    about_me = TextAreaField('About this attraction')
     file=FileField('Image')
     submit = SubmitField('Submit')
     
