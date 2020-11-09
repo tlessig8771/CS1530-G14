@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title  %}Events{% endblock  %}
+{% block page_content %}
+<div class="text-2xl">All Events</div>
+<div class="flex bg-gray-200">
+{%if (public_events is defined) and public_events%}
+{% for e in public_events %}
+    <div class="flex text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2"> 
+    <h3>{{ e.title}}</h3>
+    <ul>
+    <li><img src="data:;base64,{{ base64.b64encode(e.image).decode('ascii') }}" width="200" height="200"/></li>
+    <li>Hosted by: {{e.host.username}}</li>
+    <li>Description: {{e.description}}</li>
+    <li>Start time: {{e.start_date.strftime("%m/%d/%Y")}}</li>
+    <li>End time: {{e.end_date.strftime("%m/%d/%Y")}}</li>    
+    <li class="text-red-700 text-2xl font-bold">{% if g.user and e.host_id == g.user.id %} <a href="{{ url_for('main.cancel_event', event_id=e.id) }}">Cancel</a></li> {% endif %}</li>
+    </ul>
+    </div>
+{% endfor %}
+{% endif %}
+</div>
+{% endblock  %}
+    

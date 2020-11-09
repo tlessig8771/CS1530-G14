@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}PittJungle{% endblock %}
+
+{% block page_content %}
+<div class="flex bg-gray-200">
+{%if (hikes is defined) and hikes%}
+{% for hike in hikes %}
+<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+    <h3>{{hike.hike_name}}</h3>
+    <ul>
+        
+        <li><img src="data:;base64,{{ base64.b64encode(hike.image).decode('ascii') }}" width="100" height="100"/></li>
+        <li>Trail head: {{hike.trai_head}}</li>
+        <li>About: {{hike.about_me}}</li>
+        <li>Tags: {{hike.tags}}</li>
+    </ul>
+</div>
+
+{% endfor %}
+{%endif%}
+</div>
+{% endblock %}

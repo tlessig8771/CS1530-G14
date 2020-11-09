@@ -1,4 +1,4 @@
-from flask import render_template, redirect, request, url_for, flash
+from flask import session, render_template, redirect, request, url_for, flash, g
 from flask_login import login_user, logout_user, login_required, \
     current_user
 from . import auth
@@ -11,6 +11,9 @@ from .forms import LoginForm, RegistrationForm, ChangePasswordForm,\
 
 @auth.before_app_request
 def before_request():
+    g.user = None
+    if 'user_id' in session:
+        g.user = User.query.filter_by(id = session['user_id']).first()
     if current_user.is_authenticated:
         current_user.ping()
         if not current_user.confirmed \

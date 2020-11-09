@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}PittJungle{% endblock %}
+
+{% block page_content %}
+<div class="flex bg-gray-200">
+{%if (restaurants is defined) and restaurants%}
+{% for restaurant in restaurants %}
+<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+    <h3>{{restaurant.restaurant_name}}</h3>
+    <ul>
+        
+        <li><img src="data:;base64,{{ base64.b64encode(restaurant.image).decode('ascii') }}" width="100" height="100"/></li>
+        <li>Address: {{restaurant.address}}</li>
+        <li>Phone: {{restaurant.phone}}</li>
+        <li>About: {{restaurant.about_me}}</li>
+        <li>Tags: {{restaurant.tags}}</li>
+    </ul>
+</div>
+
+{% endfor %}
+{%endif%}
+</div>
+{% endblock %}

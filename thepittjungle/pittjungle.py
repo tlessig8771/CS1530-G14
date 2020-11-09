@@ -15,16 +15,17 @@ import sys
 import click
 from flask_migrate import Migrate, upgrade
 from app import create_app, db
-from app.models import User, Follow, Role, Permission, Post, Comment
+from app.models import User, Follow, Role, Permission, Post, Comment, Restaurant, Event, Events
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
-migrate = Migrate(app, db)
+"""migrate = Migrate(app, db)"""
+
 
 
 @app.shell_context_processor
 def make_shell_context():
     return dict(db=db, User=User, Follow=Follow, Role=Role,
-                Permission=Permission, Post=Post, Comment=Comment)
+                Permission=Permission, Post=Post, Comment=Comment,Restaurant=Restaurant)
 
 
 @app.cli.command()
@@ -73,7 +74,7 @@ def profile(length, profile_dir):
 def deploy():
     """Run deployment tasks."""
     # migrate database to latest revision
-    upgrade()
+    """upgrade()"""
 
     # create or update user roles
     Role.insert_roles()

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}PittJungle{% endblock %}
+
+{% block page_content %}
+<div class="flex bg-gray-200">
+{%if (attractions is defined) and attractions%}
+{% for attraction in attractions %}
+<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+    <h3>{{attraction.attraction_name}}</h3>
+    <ul>
+        
+        <li><img src="data:;base64,{{ base64.b64encode(attraction.image).decode('ascii') }}" width="100" height="100"/></li>
+        <li>Address: {{attraction.address}}</li>
+        <li>Phone: {{attraction.phone}}</li>
+        <li>About: {{attraction.about_me}}</li>
+        <li>Tags: {{attraction.tags}}</li>
+    </ul>
+</div>
+
+{% endfor %}
+{%endif%}
+</div>
+{% endblock %}

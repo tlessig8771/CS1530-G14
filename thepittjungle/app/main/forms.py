@@ -1,10 +1,12 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, BooleanField, SelectField,\
-    SubmitField
+    SubmitField, DateField
+from flask_wtf.file import FileField
 from wtforms.validators import DataRequired, Length, Email, Regexp
 from wtforms import ValidationError
 from flask_pagedown.fields import PageDownField
 from ..models import Role, User
+from datetime import date
 
 
 class NameForm(FlaskForm):
@@ -58,4 +60,47 @@ class PostForm(FlaskForm):
 
 class CommentForm(FlaskForm):
     body = StringField('Enter your comment', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+    
+class RestaurantForm(FlaskForm):
+    name = StringField('Restaurant Name', validators=[
+        DataRequired(), Length(1, 64)])
+    phone = StringField('Telephone', validators=[DataRequired(), Length(1, 12)])
+    address = StringField('Address', validators=[
+        DataRequired(), Length(1, 100)])
+    tags = StringField('Tags', validators=[Length(0,64)])
+    about_me = TextAreaField('About this restaurant')
+    file=FileField('Image')
+    submit = SubmitField('Submit')
+    
+    
+class EventForm(FlaskForm):
+    title = StringField('Title', validators=[
+        DataRequired(), Length(1, 64)])
+    start_date = DateField('Start date ', validators=[DataRequired()],default=date.today)
+    end_date = DateField('End date: ', validators=[DataRequired()],default=date.today)
+    tags = StringField('Tags', validators=[Length(0,64)])
+    about_me = TextAreaField('Description')
+    file=FileField('Image')
+    submit = SubmitField('Submit')
+    
+class AttractionForm(FlaskForm):
+    attraction_name = StringField('Attraction Name', validators=[
+        DataRequired(), Length(1, 64)])
+    phone = StringField('Telephone', validators=[DataRequired(), Length(1, 12)])
+    address = StringField('Address', validators=[
+        DataRequired(), Length(1, 100)])
+    tags = StringField('Tags', validators=[Length(0,64)])
+    about_me = TextAreaField('About this attarction')
+    file=FileField('Image')
+    submit = SubmitField('Submit')
+    
+class HikeForm(FlaskForm):
+    hike_name = StringField('Restaurant Name', validators=[
+        DataRequired(), Length(1, 64)])
+    address = StringField('Trail Head', validators=[
+        DataRequired(), Length(1, 100)])
+    tags = StringField('Tags', validators=[Length(0,64)])
+    about_me = TextAreaField('About this hike')
+    file=FileField('Image')
     submit = SubmitField('Submit')

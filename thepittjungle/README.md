@@ -6,6 +6,9 @@ To run in Windows
 5. set FLASK_APP=pittjungle.py
 6. set MAIL_USERNAME=thepittjungle
 7. set MAIL_PASSWORD=CS1630Project
+In order to set admin account:
+set FLASKY_ADMIN=email@example.com  ==> email of the user to be set as admin
+it needs to set before the admin registers as user.
 8. flask deploy
 9. flask run
 
@@ -17,6 +20,8 @@ To run in MacOS:
 5. export FLASK_APP=pittjungle.py
 6. export MAIL_USERNAME=thepittjungle
 7. export MAIL_PASSWORD=CS1630Project
+export FLASKY_ADMIN=email@example.com  ==> email of the user to be set as admin
+it needs to set before the admin registers as user.
 8. flask deploy
 9. flask run
 

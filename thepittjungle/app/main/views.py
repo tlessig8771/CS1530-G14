@@ -1,14 +1,21 @@
-from flask import render_template, redirect, url_for, abort, flash, request,\
-    current_app, make_response
+from flask import session, render_template, redirect, url_for, abort, flash, request,\
+    current_app, make_response, g
 from flask_login import login_required, current_user
 from flask_sqlalchemy import get_debug_queries
 from . import main
 from .forms import EditProfileForm, EditProfileAdminForm, PostForm,\
-    CommentForm
+    CommentForm, RestaurantForm, EventForm, AttractionForm, HikeForm
 from .. import db
-from ..models import Permission, Role, User, Post, Comment
+from datetime import datetime
+from ..models import Permission, Role, User, Post, Comment, Restaurant, Event, Events, Attraction, Hike
 from ..decorators import admin_required, permission_required
+import base64
 
+import app
+def format_datetime(value, format="%d %b %Y %I:%M %p"):
+    if value is None:
+        return ""
+    return value.strftime(format)
 
 @main.after_app_request
 def after_request(response):
@@ -276,3 +283,138 @@ def moderate_disable(id):
     db.session.commit()
     return redirect(url_for('.moderate',
                             page=request.args.get('page', 1, type=int)))
+    
+@main.route('/add_restaurant', methods=['GET','POST'])
+@login_required
+@admin_required
+def add_restaurant():
+    form = RestaurantForm()
+    if form.validate_on_submit():
+        restaurant = Restaurant(restaurant_name=form.name.data,
+                                address = form.address.data,
+                                phone = form.phone.data,
+                                about_me = form.about_me.data,
+                                tags = form.tags.data,
+                                image = form.file.data.read())
+        db.session.add(restaurant)
+        db.session.commit()
+    return render_template('add_restaurant.html', form=form)
+
+@main.route('/add_attraction', methods=['GET','POST'])
+@login_required
+def add_attraction():
+    form = AttractionForm()
+    if form.validate_on_submit():
+        attraction = Attraction(attraction_name=form.attraction_name.data,
+                                address = form.address.data,
+                                phone = form.phone.data,
+                                about_me = form.about_me.data,
+                                tags = form.tags.data,
+                                image = form.file.data.read())
+        db.session.add(attraction)
+        db.session.commit()
+    return render_template('add_attraction.html', form=form)
+
+@main.route('/attractions')
+def show_attractions():
+    attractions = Attraction.query.all()    
+    return render_template('attractions.html', attractions=attractions, base64=base64)
+
+@main.route('/add_hike', methods=['GET','POST'])
+@login_required
+def add_hike():
+    form = HikeForm()
+    if form.validate_on_submit():
+        hike = Hike(hike_name=form.hike_name.data,
+                    trail_head = form.address.data,
+                    about_me = form.about_me.data,
+                    tags = form.tags.data,
+                    image = form.file.data.read())
+        db.session.add(hike)
+        db.session.commit()
+    return render_template('add_hike.html', form=form)
+
+@main.route('/hike')
+def show_hikes():
+    hikes = Hike.query.all()    
+    return render_template('hikes.html', hikes=hikes, base64=base64)
+
+@main.route('/restaurants')
+def show_restaurants():
+    restaurants = Restaurant.query.all()    
+    return render_template('restaurants.html', restaurants=restaurants, base64=base64)
+
+@main.route('/about_us')
+def about_us():
+    return render_template("about_us.html")
+
+@main.route('/events')
+def list_events():
+    todays_datetime = datetime(datetime.today().year, datetime.today().month, datetime.today().day) 
+    public_events = Event.query.filter(Event.start_date >= todays_datetime).order_by(Event.start_date).all()
+    if not g.user:
+        return render_template('events.html', public_events=public_events,base64=base64)   
+    ev = Event.query.filter_by(host_id = session['user_id']).all()
+    hosting_events = []
+    if not ev:
+        return render_template('events.html', public_events=public_events, base64=base64) 
+    for e in ev:
+        hosting_events.append(e.id)
+    if not hosting_events:
+        return render_template('events.html', public_events=public_events, base64=base64) 
+    hosted_events = Event.query.filter(Event.id.in_(hosting_events),Event.start_date > todays_datetime).order_by(Event.start_date.desc()).all()
+    
+    return render_template('events.html', public_events = public_events,  hosted_events = hosted_events,base64=base64)
+
+@main.route('/create_event', methods=['GET','POST'])
+@login_required
+def create_event():
+    form = EventForm()
+    if form.validate_on_submit():        
+        format = "%Y-%m-%d"
+        e = Event(session['user_id'],
+                form.title.data,
+                form.start_date.data,
+                form.end_date.data,
+                form.about_me.data,
+                form.tags.data,
+                form.file.data.read())
+        db.session.add(e)
+        db.session.commit()
+        u = User.query.filter_by(id = session['user_id']).first()
+        u.events_attending.append(e)
+        db.session.commit()            
+        flash('Event is created successfully')
+        return redirect(url_for('main.list_events'))
+    return render_template('create_event.html', form=form)
+
+@main.route('/cancel_event/<event_id>')
+def cancel_event(event_id):
+    e = Event.query.filter_by(id = event_id).first()
+    if e is None:
+        flash('Event does not exist')
+        return redirect(url_for('main.list_event'))
+    if e.host_id != g.user.id:
+        flash('Event can only be cancelled by the host')
+        return redirect(url_for('list_events'))
+        
+    db.session.query(Event).filter(Event.id== event_id).delete()
+    db.session.commit()
+    flash('Event has been cancelled')
+    return redirect(url_for('main.list_events'))
+
+@main.route('/register/<event_id>')
+def register_to_event(event_id):
+    e = Event.query.filter_by(id = event_id).first()
+    if e is None:
+        flash('Event does not exist')
+        return redirect(url_for('main.list_event'))
+    if e.host_id == g.user.id:
+        flash('Host cannot register to attend the same event')
+        return redirect(url_for('main.list_events'))
+    User.query.filter_by(id = session['user_id']).first().events_attending.append(e)
+    flash('Registered to attand to this event')
+    return redirect(url_for('main.list_events'))               
+            
+    
+"""app..jinja_env.filters['formatdatetime'] = format_datetime"""

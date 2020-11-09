@@ -6,30 +6,29 @@
 {{ super() }}
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 {% endblock %}
 
 
 
-{% block navbar %}
+{% block navbar %} 
 <div class="navbar navbar-inverse" role="navigation">
     <div>
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ url_for('main.index') }}">PittJungle</a>
+        <div class="container2">
+        <div>
+        <img src="{{ url_for('static', filename='logo.png')}}" width=50 height=50>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url_for('main.index') }}">Home</a></li>
-                {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('main.user', username=current_user.username) }}">Profile</a></li>
-                {% endif %}
-            </ul>
+        <div class="navbar-header">
+            <div style='margin-left:100px;'>          
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">PittJungle</a>
+            </div>
+        </div>
+
+        </div>
+        <div class="navbar-collapse collapse">            
             <ul class="nav navbar-nav navbar-right">
                 {% if current_user.can(Permission.MODERATE) %}
                 <li><a href="{{ url_for('main.moderate') }}">Moderate Comments</a></li>
@@ -41,6 +40,8 @@
                         Account <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
+                       
+                        <li><a href="{{ url_for('main.user', username=current_user.username) }}">Profile</a></li>                
                         <li><a href="{{ url_for('auth.change_password') }}">Change Password</a></li>
                         <li><a href="{{ url_for('auth.change_email_request') }}">Change Email</a></li>
                         <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
@@ -52,25 +53,45 @@
             </ul>
         </div>
     </div>
-</div>
-{% endblock %}
-
-
-
-{% block content %}
-<div class="container">
-    {% for message in get_flashed_messages() %}
-    <div class="alert alert-warning">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        {{ message }}
-    </div>
-    {% endfor %}
+</div>   
     
+<div class="flex bg-gray-200">
+    <div class=".flex-auto text-4xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">
+    
+        <ul>
+            <a href="{{ url_for('main.index') }}"><li class="pl-6 py-3">Home</li></a>
+            <a href="{{ url_for('main.show_restaurants') }}" class="pl-6 py-3"><li>Restaurants</li></a>
+            
+            {% if current_user.can(Permission.MODERATE) %}
+            <a href="{{ url_for('main.add_restaurant') }}" class="pl-6 py-3 text-2xl text-right"><li>  Add Restaurants</li></a>
+            {% endif %}
 
-    {% block page_content %}{% endblock %}
-</div>
+            <a href="{{ url_for('main.list_events') }}" class="pl-6 py-3"><li>Events</li></a>
+            <a href="{{ url_for('main.create_event') }}" class="pl-6 py-3 text-2xl text-right"><li>  Create Event</li></a>
+            
+            <a href="{{ url_for('main.show_attractions') }}" class="pl-6 py-3"><li>Attractions</li></a>
+            <a href="{{ url_for('main.add_attraction') }}" class="pl-6 py-3 text-2xl text-right"><li>  Create Attraction</li></a>
+
+            <a href="{{ url_for('main.show_hikes') }}" class="pl-6 py-3"><li>Hikes</li></a>
+            <a href="{{ url_for('main.add_hike') }}" class="pl-6 py-3 text-2xl text-right"><li>  Create Hike</li></a>
+
+            <a href="{{ url_for('main.about_us') }}" class="pl-6 py-3"><li>About us</li></a>           
+            
+        
+        </ul>
+        
+    </div>
+
+    <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+        {% block page_content %}
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad labore ipsam, aut rem quo repellat esse tempore id, quidem
+        
+        {% endblock %}
+        
+        </div>
+        </div>    
+
 {% endblock %}
-
 {% block scripts %}
 {{ super() }}
 {{ moment.include_moment() }}

@@ -106,6 +106,8 @@ class User(UserMixin, db.Model):
                                 lazy='dynamic',
                                 cascade='all, delete-orphan')
     comments = db.relationship('Comment', backref='author', lazy='dynamic')
+    events_attending = db.relationship('Event', secondary='events')
+    events_hosting = db.relationship('Event',backref='host', lazy='dynamic')
 
     @staticmethod
     def add_self_follows():
@@ -279,6 +281,85 @@ class AnonymousUser(AnonymousUserMixin):
         return False
 
 login_manager.anonymous_user = AnonymousUser
+
+
+
+
+class Restaurant(db.Model):
+    __tablename__ = 'restaurant'
+    id = db.Column(db.Integer, primary_key=True)
+    restaurant_name = db.Column(db.String(64), unique=True, index=True)
+    address = db.Column(db.String(64))
+    phone = db.Column(db.String(12))
+    about_me = db.Column(db.Text())
+    tags = db.Column(db.Text())
+    image = db.Column(db.BLOB)
+    
+    
+    def to_json(self):
+        json_user = {
+            'url': url_for('api.get_user', id=self.id),
+            'username': self.username,
+            'member_since': self.member_since,
+            'last_seen': self.last_seen,
+            'posts_url': url_for('api.get_user_posts', id=self.id),
+            'followed_posts_url': url_for('api.get_user_followed_posts',
+                                          id=self.id),
+            'post_count': self.posts.count()
+        }
+        return json_user
+
+class Attraction(db.Model):
+    __tablename__ = 'attraction'
+    id = db.Column(db.Integer, primary_key=True)
+    attraction_name = db.Column(db.String(64), unique=True, index=True)
+    address = db.Column(db.String(64))
+    phone = db.Column(db.String(12))
+    about_me = db.Column(db.Text())
+    tags = db.Column(db.Text())
+    image = db.Column(db.BLOB)
+    
+class Hike(db.Model):
+    __tablename__ = 'hike'
+    id = db.Column(db.Integer, primary_key=True)
+    hike_name = db.Column(db.String(64), unique=True, index=True)
+    trail_head = db.Column(db.String(64))    
+    about_me = db.Column(db.Text())
+    tags = db.Column(db.Text())
+    image = db.Column(db.BLOB)
+
+class Events(db.Model):
+    __tablename__ = 'events'
+    attending_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)
+    event_id = db.Column(db.Integer, db.ForeignKey('event.id'), primary_key=True)
+    attendees = db.relationship('User', backref=db.backref('events', cascade="all, delete-orphan"))
+    events = db.relationship('Event', backref=db.backref('events', cascade="all, delete-orphan"))
+    
+class Event(db.Model):
+    __tablename__ = 'event'
+    id = db.Column(db.Integer, primary_key=True)
+    host_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    title = db.Column(db.String(100), nullable=False)
+    start_date = db.Column(db.DateTime, nullable=False)
+    end_date = db.Column(db.DateTime, nullable=False)
+    description = db.Column(db.String(280))
+    attendee_id = db.relationship('User', secondary='events')
+    tags = db.Column(db.Text())
+    image = db.Column(db.BLOB)
+    
+    
+    def __init__(self, user_id, title, start_date, end_date, description, tags, image):
+        self.host_id = user_id
+        self.title = title
+        self.description = description
+        self.start_date = start_date
+        self.end_date = end_date
+        self.tags=tags
+        self.image=image
+    def __repr__(self):
+        return '<Event %r>' % self.title
+       
+
 
 
 @login_manager.user_loader
