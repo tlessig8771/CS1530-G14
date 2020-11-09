@@ -96,7 +96,7 @@ class AttractionForm(FlaskForm):
     submit = SubmitField('Submit')
     
 class HikeForm(FlaskForm):
-    hike_name = StringField('Restaurant Name', validators=[
+    hike_name = StringField('Hike Name', validators=[
         DataRequired(), Length(1, 64)])
     address = StringField('Trail Head', validators=[
         DataRequired(), Length(1, 100)])
