@@ -2,12 +2,20 @@
 {% import "bootstrap/wtf.html" as wtf %}
 
 {% block title %}PittJungle - Add Hike{% endblock %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri">
 
 {% block page_content %}
-<div class="page-header">
-    <h1>Add Hike</h1>
+<div class="page-header" 
+style="background-color: rgb(9, 96, 106); 
+color: white; height: 60px;">
+    <h1 style="font-family: Acme; font-size:30px; padding-top: 10px;">
+        Add Academic Resourse</h1>
 </div>
-<div class="col-md-4">
+<div style="display: flex;  
+margin-left: 300px; 
+font-family: Gayathri; 
+font-size: 16px;">
     {{ wtf.quick_form(form) }}
 </div>
 {% endblock %}

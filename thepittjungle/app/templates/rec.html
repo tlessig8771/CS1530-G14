@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "_macros.html" as macros %}
+
+{% block title %}PittJungle{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h2>{% if current_user.is_authenticated %}{{ current_user.username }}'s Recommendations Based On Pages Visited:{% else %}Panther{% endif %}</h2>
+</div>
+
+{% if current_user.is_authenticated %}
+<div class="flex bg-gray-200">
+    <ul type="none">
+        <li><p>Your Top Recommended Food Categories: {{ food[0][0] }}; {{ food[0][1] }}; {{ food[0][2] }}</p></li>
+		
+	{%if (rest is defined) and rest%}
+		{% for rests in rest %}
+			{#<p>The TAG: {{rests.tags}} </p>
+			<p>The rec Food TAG: {{food[0][1]}} </p>#}
+			{% if (rests.tags|string() == food[0][0]|string()) %}
+				<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+					
+					<ul>
+						<li><img src="data:;base64,{{ base64.b64encode(rests.image).decode('ascii') }}" width="100" height="100"/></li>
+						<li>{{rests.restaurant_name}}</li>
+						<li>Address: {{rests.address}}</li>
+						<li>Phone: {{rests.phone}}</li>
+						<li>About: {{rests.about_me}}</li>
+						<li>Tags: {{rests.tags}}</li>
+					</ul>
+				</div>
+			{% endif %}
+			{%endfor%}
+			{% for rests in rest %}
+			{% if (rests.tags|string() == food[0][1]|string()) %}
+				<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+					
+					<ul>
+						<li><img src="data:;base64,{{ base64.b64encode(rests.image).decode('ascii') }}" width="100" height="100"/></li>
+						<li>{{rests.restaurant_name}}</li>
+						<li>Address: {{rests.address}}</li>
+						<li>Phone: {{rests.phone}}</li>
+						<li>About: {{rests.about_me}}</li>
+						<li>Tags: {{rests.tags}}</li>
+					</ul>
+				</div>
+			{% endif %}
+			{%endfor%}
+			{% for rests in rest %}
+			{% if (rests.tags|string() == food[0][2]|string()) %}
+				<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+					
+					<ul>
+						<li><img src="data:;base64,{{ base64.b64encode(rests.image).decode('ascii') }}" width="100" height="100"/></li>
+						<li>{{rests.restaurant_name}}</li>
+						<li>Address: {{rests.address}}</li>
+						<li>Phone: {{rests.phone}}</li>
+						<li>About: {{rests.about_me}}</li>
+						<li>Tags: {{rests.tags}}</li>
+					</ul>
+				</div>
+			{%endif%}
+		{% endfor %}
+	{%endif%}
+	</ul>
+	<ul type = "none">
+		<li><p>Your Top Recommended Activities: {{ activity[0][0] }}; {{ activity[0][1] }}; {{ activity[0][2] }}</p></li>
+			{%if (acts is defined) and acts%}
+		{% for act in acts %}
+			{#<p>The TAG: {{act.tags}} </p>
+			<p>The act TAG: {{activity[0][1]}} </p>#}
+			{% if (act.tags|string() == activity[0][0]|string()) %}
+				<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+					
+					<ul>
+						<li><img src="data:;base64,{{ base64.b64encode(act.image).decode('ascii') }}" width="100" height="100"/></li>
+						<li>{{act.attraction_name}}</li>
+						<li>Address: {{act.address}}</li>
+						<li>Phone: {{act.phone}}</li>
+						<li>About: {{act.about_me}}</li>
+						<li>Tags: {{act.tags}}</li>
+					</ul>
+				</div>
+				{% elif (act.tags|string() == activity[0][1]|string()) %}
+				<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+					
+					<ul>
+						<li><img src="data:;base64,{{ base64.b64encode(act.image).decode('ascii') }}" width="100" height="100"/></li>
+						<li>{{act.attraction_name}}</li>
+						<li>Address: {{act.address}}</li>
+						<li>Phone: {{act.phone}}</li>
+						<li>About: {{act.about_me}}</li>
+						<li>Tags: {{act.tags}}</li>
+					</ul>
+				</div>
+				{% elif (act.tags|string() == activity[0][2]|string()) %}
+				<div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
+					
+					<ul>
+						<li><img src="data:;base64,{{ base64.b64encode(act.image).decode('ascii') }}" width="100" height="100"/></li>
+						<li>{{act.attraction_name}}</li>
+						<li>Address: {{act.address}}</li>
+						<li>Phone: {{act.phone}}</li>
+						<li>About: {{act.about_me}}</li>
+						<li>Tags: {{act.tags}}</li>
+					</ul>
+				</div>
+			{%endif%}
+		{% endfor %}
+	{%endif%}
+		
+    </ul>
+</div>
+{#
+<div>
+	<p>The Food Probability Distributions Are: {{ food[2] }}</p>
+	
+	<p>The Activity Probability Distributions Are: {{ activity[2] }}</p>
+</div>#}
+
+{% else %}
+<div class = "post-tabs">
+<p> Please Login to view suggested recommendations </p>
+</div>
+{% endif %}
+{% endblock %}

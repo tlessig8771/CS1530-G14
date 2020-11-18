@@ -4,6 +4,9 @@
 
 {% block head %}
 {{ super() }}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri">
+
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link
@@ -15,31 +18,25 @@
 
 
 {% block navbar %} 
-<div class="navbar navbar-inverse" role="navigation">
-    <div>
-        <div class="container2">
-        <div>
-        <img src="{{ url_for('static', filename='logo.png')}}" width=50 height=50>
-        </div>
-        <div class="navbar-header">
-            <div style='margin-left:100px;'>          
-            <a class="navbar-brand" href="{{ url_for('main.index') }}">PittJungle</a>
-            </div>
+<div class="navbar navbar-inverse" role="navigation" style= "background-color:rgb(9, 96, 106); font-family: Acme;">
+    <div style= "display: flex;">
+        <div class="container2" style= "display: flex;">
+            <img src="{{ url_for('static', filename='logo.png')}}" width=50 height=50  style = "display: flex;">        
+            <a class="navbar-brand" href="{{ url_for('main.index') }}" style="font-size: 50px; color: white;">PittJungle</a>
         </div>
 
-        </div>
-        <div class="navbar-collapse collapse">            
-            <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-collapse collapse" style= "display: flex;">            
+            <ul class="nav navbar-nav navbar-right" style= "display: flex;">
                 {% if current_user.can(Permission.MODERATE) %}
-                <li><a href="{{ url_for('main.moderate') }}">Moderate Comments</a></li>
+                <li style="font-size: 20px;"><a href="{{ url_for('main.moderate') }}">Moderate Comments</a></li>
                 {% endif %}
                 {% if current_user.is_authenticated %}
-                <li class="dropdown">
+                <li class="dropdown" style="font-size: 20px;">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="{{ current_user.gravatar(size=18) }}">
                         Account <b class="caret"></b>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" >
                        
                         <li><a href="{{ url_for('main.user', username=current_user.username) }}">Profile</a></li>                
                         <li><a href="{{ url_for('auth.change_password') }}">Change Password</a></li>
@@ -48,6 +45,7 @@
                     </ul>
                 </li>
                 {% else %}
+				<li><a href="{{ url_for('auth.register') }}">Register</a></li>
                 <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
                 {% endif %}
             </ul>
@@ -55,29 +53,58 @@
     </div>
 </div>   
     
-<div class="flex bg-gray-200">
-    <div class=".flex-auto text-4xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">
+<div class="flex bg-gray-200" style="margin-top: 20px;">
+    <div class=".flex-auto text-4xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2"
+    style= "background-color:rgb(91, 168, 160); font-family: Gayathri;">
     
-        <ul>
-            <a href="{{ url_for('main.index') }}"><li class="pl-6 py-3">Home</li></a>
-            <a href="{{ url_for('main.show_restaurants') }}" class="pl-6 py-3"><li>Restaurants</li></a>
+        <ul style="text-align: left;">
+            <a href="{{ url_for('main.index') }}" ><li>Home</li></a>
+            <a href="{{ url_for('main.about_us') }}" ><li>About us</li></a>        
             
-            {% if current_user.can(Permission.MODERATE) %}
-            <a href="{{ url_for('main.add_restaurant') }}" class="pl-6 py-3 text-2xl text-right"><li>  Add Restaurants</li></a>
-            {% endif %}
-
-            <a href="{{ url_for('main.list_events') }}" class="pl-6 py-3"><li>Events</li></a>
-            <a href="{{ url_for('main.create_event') }}" class="pl-6 py-3 text-2xl text-right"><li>  Create Event</li></a>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 Restaurants
+                </a>
+				<ul class="dropdown-menu">
+					<li><a href="{{ url_for('main.show_restaurants') }}" class="pl-6 py-3"><li style = "text-align: left;">View Restaurants</li></a></li>
             
-            <a href="{{ url_for('main.show_attractions') }}" class="pl-6 py-3"><li>Attractions</li></a>
-            <a href="{{ url_for('main.add_attraction') }}" class="pl-6 py-3 text-2xl text-right"><li>  Create Attraction</li></a>
+					{% if current_user.can(Permission.MODERATE) %}
+					<li><a href="{{ url_for('main.add_restaurant') }}" class="pl-6 py-3"><li >Add Restaurants</li></a></li>
+					{% endif %}
+				</ul>
+			</li>
 
-            <a href="{{ url_for('main.show_hikes') }}" class="pl-6 py-3"><li>Hikes</li></a>
-            <a href="{{ url_for('main.add_hike') }}" class="pl-6 py-3 text-2xl text-right"><li>  Create Hike</li></a>
-
-            <a href="{{ url_for('main.about_us') }}" class="pl-6 py-3"><li>About us</li></a>           
+			<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                     Events
+                    </a>
+                    <ul class="dropdown-menu">
+						<li><a href="{{ url_for('main.list_events') }}" class="pl-6 py-3">View Events</a></li>
+						<li><a href="{{ url_for('main.create_event') }}" class="pl-6 py-3">Create Events</a></li>
+                    </ul>
+            </li>
+		
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Attractions
+                    </a>
+                    <ul class="dropdown-menu">
+						<li><a href="{{ url_for('main.show_attractions') }}" class="pl-6 py-3">View Attractions</a></li>
+						<li><a href="{{ url_for('main.add_attraction') }}" class="pl-6 py-3">Create Attraction</a></li>
+                    </ul>
+            </li>
             
-        
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                     Academic Resources
+                    </a>
+                    <ul class="dropdown-menu">
+						<li><a href="{{ url_for('main.show_hikes') }}" class="pl-6 py-3">View Academic Resources</a></li>
+						<li><a href="{{ url_for('main.add_hike') }}" class="pl-6 py-3">Create Academic Resources</a></li>
+                    </ul>        
+            </li>
+            <a href="{{ url_for('main.recommendations') }}"><li>Recommendations</li></a>
+           
         </ul>
         
     </div>

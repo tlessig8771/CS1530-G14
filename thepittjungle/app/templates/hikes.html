@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 {% block title %}PittJungle{% endblock %}
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri">
+
 {% block page_content %}
 <div class="flex bg-gray-200">
 {%if (hikes is defined) and hikes%}
 {% for hike in hikes %}
 <div class=".flex-1 text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2">  
-    <h3>{{hike.hike_name}}</h3>
-    <ul>
+    <h3 style="font-family: Acme; font-size: 20px;">{{hike.hike_name}}</h3>
+    <ul style="font-family: Gayathri;">
         
         <li><img src="data:;base64,{{ base64.b64encode(hike.image).decode('ascii') }}" width="100" height="100"/></li>
         <li>Trail head: {{hike.trai_head}}</li>

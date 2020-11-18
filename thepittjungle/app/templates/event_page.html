@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title  %}Events{% endblock  %}
+{% block page_content %}
+<h1>{{ event.title}}</h1>
+<div class="flex bg-gray-200">
+
+
+    <div class="flex text-2xl text-gray-700 text-left bg-gray-400 px-4 py-2 m-2"> 
+
+        <ul>
+        <li><img src="data:;base64,{{ base64.b64encode(event.image).decode('ascii') }}" width="200" height="200"/></li>
+        <li>Hosted by: {{event.host.username}}</li>
+        <li>Description: {{event.description}}</li>
+        <li>Start time: {{event.start_date.strftime("%m/%d/%Y")}}</li>
+        <li>End time: {{event.end_date.strftime("%m/%d/%Y")}}</li>    
+        <!-- <li class="text-red-700 text-2xl font-bold">{% if g.user and event.host_id == g.user.id %} <a href="{{ url_for('main.cancel_event', event_id=event.id) }}">Cancel</a></li> {% endif %}</li> -->
+        </ul>
+
+    </div>
+
+
+</div>
+{% endblock  %} 

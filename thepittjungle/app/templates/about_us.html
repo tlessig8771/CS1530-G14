@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% block title %}PittJungle{% endblock %}
-
 {% block page_content %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri">
 <div class='.some-page-wrapper'>
     <div class='.row'>
     <div class='.column'>
       <div class='.left-column'>
-      <h2 class = ".a">The Issue: </h2>
+      <h2 style = "font-family: Acme;">The Issue: </h2>
       <p>-------------------------------------------------------------</p>
-        <p class = "a">When students are starting college, 
+        <p style = "font-family: Gayathri;">When students are starting college, 
           it is the first time they are on their own. 
           Students tend to focus their time on academics, 
           which although is important, can be detrimental to their 
@@ -32,45 +33,91 @@
     
       </div>
     </div>
+    <div class='.column'>
+      <div class='.right-column'>
+      <h2 class = ".b">How To: </h2>
+      <p>-------------------------------------------------------------</p>
+        <p class = "b">We chose to use a Facebook like structure in designing our website. The login/signup 
+          buttons will always be in the top right of the website. On the left navigation bar, you 
+          can see the options of how to visit each section. Only admin can add restaurants, however, 
+          you can click on events/attractions/academic resources adn see the drop down, which will allow for 
+          you to click the add button. After entering the necessary material, you can click submit ONLY ONCE.
+          This will make the item available on the view page of each section. Events can be removed only by the 
+          user who added it. Comments can be made on the home page, or on a users profile. To Friend a user, 
+          go on thier profile and click "FRIEND".
+        </p>
+    
+      </div>
+    </div>
     </div>
     </div>
     
         <h2 class = ".team">The Team: </h2> 
-        <p>----------------------------------------------------------------------------------------------------------------------------------------</p>
-        <div class='.team-wrapper'>
-    <div class='.row'>
-    <div class='.column'>
-      <div class='.x'>
+        <p>--------------------------------------------------------------------------------------------------</p>
+        <div style="display: flex; background-color: rgb(18, 184, 204);">
+    <div style="display: flex;">
+    <div style="display: flex;">
+      <div style = "margin-top: 10px;">
         Sush Bansod
-        <img class = ".teampic" src = {sush}/>
+        <img style="object-fit: contain;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 200px;
+        width: 180px;
+        border-radius: 50%;" src = "{{ url_for('static', filename='sush.jpeg')}}"/>
         Project Manager
       </div>
     </div>
-    <div class='.column'>
-      <div class='.x'>
+    <div style="display: flex;">
+      <div style = "margin-top: 10px;">
       Sherryl Augustine
-      <img class = ".teampic" src = {sher}/>
+      <img style="object-fit: contain;
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+      height: 200px;
+      width: 180px;
+      border-radius: 50%;"src = "{{ url_for('static', filename='Sher.jfif')}}"/>
       Front End Developer
       </div>
     </div>
-    <div class='.column'>
-      <div class='x'>
-        Trent
-        <img class = ".teampic" src = {trent}/>
+    <div style="display: flex;">
+      <div style = "margin-top: 10px;">
+        Trent Lessig
+        <img  style="object-fit: contain;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 200px;
+        width: 180px;
+        border-radius: 50%;"src = "{{ url_for('static', filename='trent.png')}}"/>
         Reccomender System
       </div>
     </div>
-    <div class='.column'>
-      <div class='x'>
-        Luiza
-        <img/>
+    <div style="display: flex;">
+      <div style = "margin-top: 10px;">
+        Luiza Urazaeva
+        <img style="object-fit: contain;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 200px;
+        width: 180px;
+        border-radius: 50%;" src = "{{ url_for('static', filename='luiza.jpeg')}}" />
         Back-End Developer
       </div>
     </div>
-    <div class='column'>
-      <div class='x'>
-       David
-       <img/>
+    <div style="display: flex;">
+      <div style = "margin-top: 10px;">
+       David Ladeji
+       <img style="object-fit: contain;
+       margin-top: 15px;
+       margin-left: 15px;
+       margin-right: 15px;
+       height: 200px;
+       width: 180px;
+       border-radius: 50%;" src = "{{ url_for('static', filename='david.jpeg')}}"/>
        Back-End Developer
       </div>
     </div>

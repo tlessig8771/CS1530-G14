@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri">
+
 <ul class="posts">
     {% for post in posts %}
     <li class="post">
@@ -8,8 +11,9 @@
         </div>
         <div class="post-content">
             <div class="post-date">{{ moment(post.timestamp).fromNow() }}</div>
-            <div class="post-author"><a href="{{ url_for('.user', username=post.author.username) }}">{{ post.author.username }}</a></div>
-            <div class="post-body">
+            <div class="post-author" style="font-family: Acme; font-size: 20px;">
+                <a href="{{ url_for('.user', username=post.author.username) }}">{{ post.author.username }}</a></div>
+            <div class="post-body" style="font-size: 13px;">
                 {% if post.body_html %}
                     {{ post.body_html | safe }}
                 {% else %}
