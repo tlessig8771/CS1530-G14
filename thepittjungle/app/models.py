@@ -93,6 +93,24 @@ class User(UserMixin, db.Model):
     about_me = db.Column(db.Text())
     member_since = db.Column(db.DateTime(), default=datetime.utcnow)
     last_seen = db.Column(db.DateTime(), default=datetime.utcnow)
+    fastfood = db.Column(db.Integer, default=0)
+    dining = db.Column(db.Integer, default=0)
+    dessert = db.Column(db.Integer, default=0)
+    chinese = db.Column(db.Integer, default=0)
+    pizza = db.Column(db.Integer, default=0)
+    healthy = db.Column(db.Integer, default=0)
+    bars = db.Column(db.Integer, default=0)
+    outside_campus = db.Column(db.Integer, default=0)
+    nature = db.Column(db.Integer, default=0)
+    hiking = db.Column(db.Integer, default=0)
+    kayaking = db.Column(db.Integer, default=0)
+    extreme_sports = db.Column(db.Integer, default=0)
+    sports = db.Column(db.Integer, default=0)
+    movies = db.Column(db.Integer, default=0)
+    concerts = db.Column(db.Integer, default=0)
+    art_history = db.Column(db.Integer, default=0)
+    science_tech = db.Column(db.Integer, default=0)
+    entertainment = db.Column(db.Integer, default=0)
     avatar_hash = db.Column(db.String(32))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
     followed = db.relationship('Follow',
@@ -272,6 +290,60 @@ class User(UserMixin, db.Model):
     def __repr__(self):
         return '<User %r>' % self.username
 
+    def set_fastfood(self):
+        self.fastfood = 1
+
+    def set_dining(self):
+        self.dining = 1
+
+    def set_dessert(self):
+        self.dessert = 1
+
+    def set_chinese(self):
+        self.chinese = 1
+
+    def set_pizza(self):
+        self.pizza = 1
+
+    def set_healthy(self):
+        self.healthy = 1
+
+    def set_bars(self):
+        self.bars = 1
+
+    def set_outside_campus(self):
+        self.outside_campus = 1
+
+    def set_nature(self):
+        self.nature = 1
+
+    def set_hiking(self):
+        self.hiking = 1
+
+    def set_kayaking(self):
+        self.kayaking = 1
+
+    def set_extreme_sports(self):
+        self.extreme_sports = 1
+
+    def set_sports(self):
+        self.sports = 1
+
+    def set_movies(self):
+        self.movies = 1
+
+    def set_concerts(self):
+        self.concerts = 1
+
+    def set_art_history(self):
+        self.art_history = 1
+
+    def set_science_tech(self):
+        self.science_tech = 1
+
+    def set_entertainment(self):
+        self.entertainment = 1
+
 
 class AnonymousUser(AnonymousUserMixin):
     def can(self, permissions):
@@ -281,8 +353,6 @@ class AnonymousUser(AnonymousUserMixin):
         return False
 
 login_manager.anonymous_user = AnonymousUser
-
-
 
 
 class Restaurant(db.Model):
@@ -358,15 +428,12 @@ class Event(db.Model):
         self.image=image
     def __repr__(self):
         return '<Event %r>' % self.title
-       
-
-
 
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
-
-
+	
+	
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
