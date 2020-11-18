@@ -96,11 +96,27 @@ class AttractionForm(FlaskForm):
     submit = SubmitField('Submit')
     
 class HikeForm(FlaskForm):
-    hike_name = StringField('Hike Name', validators=[
+    hike_name = StringField('Resource Name', validators=[
         DataRequired(), Length(1, 64)])
-    address = StringField('Trail Head', validators=[
+    address = StringField('Location', validators=[
         DataRequired(), Length(1, 100)])
     tags = StringField('Tags', validators=[Length(0,64)])
-    about_me = TextAreaField('About this hike')
+    about_me = TextAreaField('About this academic resource')
     file=FileField('Image')
     submit = SubmitField('Submit')
+	
+class FilterRestaurant(FlaskForm):
+    filterRestaurant = SelectField(u'Filter By: ', choices=[('Show All', 'Show All'), 
+                            ('Dining', 'Dining'), ('Dessert', 'Dessert'), ('Pizza', 'Pizza'), ('Chinese', 'Chinese'),
+                            ('Healthy', 'Healthy'), ('Bars', 'Bars'), ('OutsideCampus', 'OutsideCampus'), ('FastFood', 'FastFood')])
+    
+
+    submit = SubmitField('Filter Food')
+
+class FilterAttraction(FlaskForm):
+        filterActivity = SelectField(u'Filter By: ', choices=[('Show All', 'Show All'), 
+                            ('Nature', 'Nature'), ('Hiking', 'Hiking'), ('Entertainment', 'Entertainment'), ('Extreme', 'Extreme'),
+                            ('Sports', 'Sports'), ('ArtHistory', 'ArtHistory'), ('ScienceTechnology', 'ScienceTechnology'), ('Sports', 'Sports'),
+			    ('Movies', 'Movies'), ('Concerts', 'Concerts'), ('Kayaking', 'Kayaking')])
+
+        submit = SubmitField('Filter Attractions')

@@ -4,12 +4,13 @@ from flask_login import login_required, current_user
 from flask_sqlalchemy import get_debug_queries
 from . import main
 from .forms import EditProfileForm, EditProfileAdminForm, PostForm,\
-    CommentForm, RestaurantForm, EventForm, AttractionForm, HikeForm
+    CommentForm, RestaurantForm, EventForm, AttractionForm, HikeForm, FilterRestaurant, FilterAttraction
 from .. import db
 from datetime import datetime
 from ..models import Permission, Role, User, Post, Comment, Restaurant, Event, Events, Attraction, Hike
 from ..decorators import admin_required, permission_required
 import base64
+import operator
 
 import app
 def format_datetime(value, format="%d %b %Y %I:%M %p"):
@@ -315,10 +316,55 @@ def add_attraction():
         db.session.commit()
     return render_template('add_attraction.html', form=form)
 
-@main.route('/attractions')
+@main.route('/attractions', methods=['GET', 'POST'])
 def show_attractions():
-    attractions = Attraction.query.all()    
-    return render_template('attractions.html', attractions=attractions, base64=base64)
+    form = FilterAttraction()
+    #if form.validate_on_submit():
+    filterAct = form.filterActivity.data
+    if(filterAct == 'None'):
+        filterAct = 'Show All'
+    print(filterAct)
+    if current_user.is_authenticated:
+        attractions = Attraction.query.all()
+
+        print("ACT TAGS")
+        print(current_user.hiking)
+        print(current_user.extreme_sports)
+        print(current_user.kayaking)
+        print(current_user.nature)
+        print(current_user.movies)
+        print(current_user.sports)
+        print(current_user.concerts)
+        print(current_user.art_history)
+        print(current_user.science_tech)
+        print(current_user.entertainment)
+
+        current_user.nature = current_user.nature + 1
+        current_user.hiking = current_user.hiking + 1
+        current_user.kayaking = current_user.kayaking + 1
+        current_user.extreme_sports = current_user.extreme_sports + 1
+        current_user.sports = current_user.sports + 1
+        current_user.movies = current_user.movies + 1
+        current_user.concerts = current_user.concerts + 1
+        current_user.art_history = current_user.art_history + 1
+        current_user.science_tech = current_user.science_tech + 1
+        current_user.entertainment = current_user.entertainment + 1
+        db.session.commit()
+        
+        print("ACT TAGS")
+        print(current_user.hiking)
+        print(current_user.extreme_sports)
+        print(current_user.kayaking)
+        print(current_user.nature)
+        print(current_user.movies)
+        print(current_user.sports)
+        print(current_user.concerts)
+        print(current_user.art_history)
+        print(current_user.science_tech)
+        print(current_user.entertainment)
+        
+        return render_template('attractions.html', attractions=attractions, base64=base64, form=form, filterAct=filterAct)
+    return redirect('login.html')   
 
 @main.route('/add_hike', methods=['GET','POST'])
 @login_required
@@ -339,10 +385,69 @@ def show_hikes():
     hikes = Hike.query.all()    
     return render_template('hikes.html', hikes=hikes, base64=base64)
 
-@main.route('/restaurants')
+@main.route('/restaurants', methods=['GET', 'POST'])
 def show_restaurants():
-    restaurants = Restaurant.query.all()    
-    return render_template('restaurants.html', restaurants=restaurants, base64=base64)
+    form = FilterRestaurant()
+    #if form.validate_on_submit():
+    filterRest = form.filterRestaurant.data
+    if(filterRest == 'None'):
+        filterRest = 'Show All'
+    print(filterRest)
+    if current_user.is_authenticated:
+        restaurants = Restaurant.query.all()
+
+        print("FOOD TAGS")
+        print(current_user.fastfood)
+        print(current_user.dining)
+        print(current_user.dessert)
+        print(current_user.chinese)
+        print(current_user.pizza)
+        print(current_user.healthy)
+        print(current_user.bars)
+        print(current_user.outside_campus)
+
+        if(filterRest == 'FastFood'):
+            current_user.fastfood = current_user.fastfood + 1
+        elif(filterRest == 'Dining'):
+            current_user.dining = current_user.dining + 1
+        elif(filterRest == 'Dessert'):
+            current_user.dessert = current_user.dessert + 1
+        elif(filterRest == 'Chinese'):
+            current_user.chinese = current_user.chinese + 1
+        elif(filterRest == 'Pizza'):
+            current_user.pizza = current_user.pizza + 1
+        elif(filterRest == 'Healthy'):
+            current_user.healthy = current_user.healthy + 1
+        elif(filterRest == 'Bars'):
+            current_user.bars = current_user.bars + 1
+        elif(filterRest == 'OutsideCampus'):
+            current_user.outside_campus = current_user.outside_campus + 1
+        elif(filterRest == 'Show All'):
+            current_user.fastfood = current_user.fastfood + 1
+            current_user.dining = current_user.dining + 1
+            current_user.dessert = current_user.dessert + 1
+            current_user.chinese = current_user.chinese + 1
+            current_user.pizza = current_user.pizza + 1
+            current_user.healthy = current_user.healthy + 1
+            current_user.bars = current_user.bars + 1
+            current_user.outside_campus = current_user.outside_campus + 1
+
+        
+        db.session.commit() #commit the changes made from the statements above
+        
+        print("FOOD TAGS")
+        print(current_user.fastfood)
+        print(current_user.dining)
+        print(current_user.dessert)
+        print(current_user.chinese)
+        print(current_user.pizza)
+        print(current_user.healthy)
+        print(current_user.bars)
+        print(current_user.outside_campus)
+        
+        return render_template('restaurants.html', restaurants=restaurants, base64=base64, form=form, filterRest=filterRest)
+    return redirect('login.html')
+
 
 @main.route('/about_us')
 def about_us():
@@ -352,20 +457,28 @@ def about_us():
 def list_events():
     todays_datetime = datetime(datetime.today().year, datetime.today().month, datetime.today().day) 
     public_events = Event.query.filter(Event.start_date >= todays_datetime).order_by(Event.start_date).all()
-    if not g.user:
-        return render_template('events.html', public_events=public_events,base64=base64)   
+    if not current_user.is_authenticated:
+         return redirect('login.html')  
+
     ev = Event.query.filter_by(host_id = session['user_id']).all()
     hosting_events = []
     if not ev:
-        return render_template('events.html', public_events=public_events, base64=base64) 
+            return render_template('events.html', public_events=public_events, base64=base64) 
     for e in ev:
-        hosting_events.append(e.id)
+            hosting_events.append(e.id)
     if not hosting_events:
-        return render_template('events.html', public_events=public_events, base64=base64) 
+            return render_template('events.html', public_events=public_events, base64=base64) 
     hosted_events = Event.query.filter(Event.id.in_(hosting_events),Event.start_date > todays_datetime).order_by(Event.start_date.desc()).all()
     
     return render_template('events.html', public_events = public_events,  hosted_events = hosted_events,base64=base64)
 
+
+@main.route('/events/<event_id>')
+def display_event(event_id):
+    event = Event.query.get_or_404(event_id)
+    return render_template('event_page.html', event=event, base64=base64)
+	
+	
 @main.route('/create_event', methods=['GET','POST'])
 @login_required
 def create_event():
@@ -394,7 +507,7 @@ def cancel_event(event_id):
     if e is None:
         flash('Event does not exist')
         return redirect(url_for('main.list_event'))
-    if e.host_id != g.user.id:
+    if e.host_id != current_user.id:
         flash('Event can only be cancelled by the host')
         return redirect(url_for('list_events'))
         
@@ -414,7 +527,81 @@ def register_to_event(event_id):
         return redirect(url_for('main.list_events'))
     User.query.filter_by(id = session['user_id']).first().events_attending.append(e)
     flash('Registered to attand to this event')
-    return redirect(url_for('main.list_events'))               
+    return redirect(url_for('main.list_events'))   
+
+@main.route('/food/recommendations')
+def food_recommendation():
+    fastfood = current_user.fastfood
+    dining = current_user.dining
+    dessert = current_user.dessert
+    chinese = current_user.chinese
+    bars = current_user.bars
+    outside_campus = current_user.outside_campus
+    healthy = current_user.healthy
+    pizza = current_user.pizza
+    
+    foodTotal = dining+dessert+chinese+bars+outside_campus+healthy+fastfood+pizza
+    print(foodTotal)
+    foodProb = {"Dining":dining/foodTotal, "Dessert":dessert/foodTotal, "Pizza":pizza/foodTotal, "Chinese":chinese/foodTotal, "Bars":bars/foodTotal, "OutsideCampus":outside_campus/foodTotal, "Healthy":healthy/foodTotal, "FastFood":fastfood/foodTotal}
+    sortedFood = sorted(foodProb.items(), key=operator.itemgetter(1), reverse=True)
+    print(sortedFood)
+    food = []
+    foodWeight = []
+    for item in sortedFood:
+        food.append(item[0])
+        foodWeight.append(item[1])
+    print(food)
+    print(foodWeight)
+    #favoredFood = max(foodProb, key=foodProb.get)
+    return(food,foodWeight, sortedFood)
+	
+@main.route('/activity/recommendations')	
+def activity_recommendation():
+    nature = current_user.nature
+    hiking = current_user.hiking
+    extreme = current_user.extreme_sports
+    kayaking = current_user.kayaking
+    sports = current_user.sports
+    concerts = current_user.concerts
+    movies = current_user.movies
+    ah = current_user.art_history
+    st = current_user.science_tech
+    ent = current_user.entertainment
+    
+    actTotal = nature+hiking+extreme+kayaking+sports+concerts+movies+ah+st+ent
+    actProb = {"Nature":nature/actTotal, "Concerts":concerts/actTotal, "Hiking":hiking/actTotal, "Extreme":extreme/actTotal, "Kayaking":kayaking/actTotal, "Sports":sports/actTotal, "Movies":movies/actTotal, "Art_History":ah/actTotal, "Science_Tech":st/actTotal, "Entertainment":ent/actTotal}
+    sortedActivity = sorted(actProb.items(), key=operator.itemgetter(1), reverse=True)
+    print(sortedActivity)
+    activity = []
+    activityWeight = []
+    for item in sortedActivity:
+        activity.append(item[0])
+        activityWeight.append(item[1])
+    print(activity)
+    print(activityWeight)
+	
+	#favoredAct = max(actProb, key=actProb.get)
+    return(activity,activityWeight, sortedActivity)
+	
+	
+@main.route('/recommendations')
+def recommendations():
+    food = food_recommendation()
+    activity = activity_recommendation()
+    rest = Restaurant.query.all()
+    acts = Attraction.query.all() 
+                                    ###WRITE TO FILE###
+    stats = open("UserProbs.txt", "a")
+    stats.write(str(current_user.username)+'\n')
+    ##stats.write(str(datetime.now())+'\n')
+    stats.write("\nFood Probabilities\n")
+    stats.write(str(food[2]))
+    stats.write("\nActivities Probabilities\n")
+    stats.writelines(str(activity[2])+"\n\n")
+    stats.close()
+
+    return render_template('rec.html', food=food, activity=activity, rest=rest, acts=acts, base64=base64)
+	
             
     
 """app..jinja_env.filters['formatdatetime'] = format_datetime"""
