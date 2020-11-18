@@ -1,0 +1,784 @@
+trent
+
+Food Probabilities
+[('dining', 0.14285714285714285), ('dessert', 0.14285714285714285), ('chinese', 0.14285714285714285), ('bars', 0.14285714285714285), ('outside_campus', 0.14285714285714285), ('healthy', 0.14285714285714285), ('fastfood', 0.14285714285714285), ('pizza:', 0.0)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('dining', 0.14285714285714285), ('dessert', 0.14285714285714285), ('chinese', 0.14285714285714285), ('bars', 0.14285714285714285), ('outside_campus', 0.14285714285714285), ('healthy', 0.14285714285714285), ('fastfood', 0.14285714285714285), ('pizza:', 0.0)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('dining', 0.14285714285714285), ('dessert', 0.14285714285714285), ('chinese', 0.14285714285714285), ('bars', 0.14285714285714285), ('outside_campus', 0.14285714285714285), ('healthy', 0.14285714285714285), ('fastfood', 0.14285714285714285), ('pizza:', 0.0)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('dining', 0.14189189189189189), ('dessert', 0.14189189189189189), ('chinese', 0.14189189189189189), ('bars', 0.14189189189189189), ('outside_campus', 0.14189189189189189), ('healthy', 0.14189189189189189), ('fastfood', 0.14189189189189189), ('pizza:', 0.006756756756756757)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+Bob
+
+Food Probabilities
+[('dining', 0.125), ('dessert', 0.125), ('pizza:', 0.125), ('chinese', 0.125), ('bars', 0.125), ('outside_campus', 0.125), ('healthy', 0.125), ('fastfood', 0.125)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('science_tech', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('extreme', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0)]
+
+trent
+
+Food Probabilities
+[('dining', 0.13829787234042554), ('dessert', 0.13829787234042554), ('chinese', 0.13829787234042554), ('bars', 0.13829787234042554), ('outside_campus', 0.13829787234042554), ('healthy', 0.13829787234042554), ('fastfood', 0.13829787234042554), ('pizza:', 0.031914893617021274)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('dining', 0.13829787234042554), ('dessert', 0.13829787234042554), ('chinese', 0.13829787234042554), ('bars', 0.13829787234042554), ('outside_campus', 0.13829787234042554), ('healthy', 0.13829787234042554), ('fastfood', 0.13829787234042554), ('pizza:', 0.031914893617021274)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('dining', 0.13829787234042554), ('dessert', 0.13829787234042554), ('chinese', 0.13829787234042554), ('bars', 0.13829787234042554), ('outside_campus', 0.13829787234042554), ('healthy', 0.13829787234042554), ('fastfood', 0.13829787234042554), ('pizza:', 0.031914893617021274)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('dining', 0.13829787234042554), ('dessert', 0.13829787234042554), ('chinese', 0.13829787234042554), ('bars', 0.13829787234042554), ('outside_campus', 0.13829787234042554), ('healthy', 0.13829787234042554), ('fastfood', 0.13829787234042554), ('pizza:', 0.031914893617021274)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13829787234042554), ('Dessert', 0.13829787234042554), ('Chinese', 0.13829787234042554), ('Bars', 0.13829787234042554), ('outside_campus', 0.13829787234042554), ('Healthy', 0.13829787234042554), ('fastfood', 0.13829787234042554), ('Pizza:', 0.031914893617021274)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.1377551020408163), ('Dessert', 0.1377551020408163), ('Chinese', 0.1377551020408163), ('Bars', 0.1377551020408163), ('outside_campus', 0.1377551020408163), ('Healthy', 0.1377551020408163), ('fastfood', 0.1377551020408163), ('Pizza:', 0.03571428571428571)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13725490196078433), ('Dessert', 0.13725490196078433), ('Chinese', 0.13725490196078433), ('Bars', 0.13725490196078433), ('outside_campus', 0.13725490196078433), ('Healthy', 0.13725490196078433), ('fastfood', 0.13725490196078433), ('Pizza:', 0.0392156862745098)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13725490196078433), ('Dessert', 0.13725490196078433), ('Chinese', 0.13725490196078433), ('Bars', 0.13725490196078433), ('outside_campus', 0.13725490196078433), ('Healthy', 0.13725490196078433), ('fastfood', 0.13725490196078433), ('Pizza:', 0.0392156862745098)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13679245283018868), ('Dessert', 0.13679245283018868), ('Chinese', 0.13679245283018868), ('Bars', 0.13679245283018868), ('outside_campus', 0.13679245283018868), ('Healthy', 0.13679245283018868), ('fastfood', 0.13679245283018868), ('Pizza:', 0.04245283018867924)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13636363636363635), ('Dessert', 0.13636363636363635), ('Chinese', 0.13636363636363635), ('Bars', 0.13636363636363635), ('outside_campus', 0.13636363636363635), ('Healthy', 0.13636363636363635), ('fastfood', 0.13636363636363635), ('Pizza:', 0.045454545454545456)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13596491228070176), ('Dessert', 0.13596491228070176), ('Chinese', 0.13596491228070176), ('Bars', 0.13596491228070176), ('outside_campus', 0.13596491228070176), ('Healthy', 0.13596491228070176), ('fastfood', 0.13596491228070176), ('Pizza:', 0.04824561403508772)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13559322033898305), ('Dessert', 0.13559322033898305), ('Chinese', 0.13559322033898305), ('Bars', 0.13559322033898305), ('outside_campus', 0.13559322033898305), ('Healthy', 0.13559322033898305), ('fastfood', 0.13559322033898305), ('Pizza:', 0.05084745762711865)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13524590163934427), ('Dessert', 0.13524590163934427), ('Chinese', 0.13524590163934427), ('Bars', 0.13524590163934427), ('outside_campus', 0.13524590163934427), ('Healthy', 0.13524590163934427), ('fastfood', 0.13524590163934427), ('Pizza:', 0.05327868852459016)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13524590163934427), ('Dessert', 0.13524590163934427), ('Chinese', 0.13524590163934427), ('Bars', 0.13524590163934427), ('outside_campus', 0.13524590163934427), ('Healthy', 0.13524590163934427), ('fastfood', 0.13524590163934427), ('Pizza:', 0.05327868852459016)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.1349206349206349), ('Dessert', 0.1349206349206349), ('Chinese', 0.1349206349206349), ('Bars', 0.1349206349206349), ('outside_campus', 0.1349206349206349), ('Healthy', 0.1349206349206349), ('fastfood', 0.1349206349206349), ('Pizza:', 0.05555555555555555)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.1349206349206349), ('Dessert', 0.1349206349206349), ('Chinese', 0.1349206349206349), ('Bars', 0.1349206349206349), ('outside_campus', 0.1349206349206349), ('Healthy', 0.1349206349206349), ('fastfood', 0.1349206349206349), ('Pizza:', 0.05555555555555555)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.13172043010752688), ('Dessert', 0.13172043010752688), ('Chinese', 0.13172043010752688), ('Bars', 0.13172043010752688), ('outside_campus', 0.13172043010752688), ('Healthy', 0.13172043010752688), ('fastfood', 0.13172043010752688), ('Pizza:', 0.07795698924731183)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.1308411214953271), ('Dessert', 0.1308411214953271), ('Chinese', 0.1308411214953271), ('Bars', 0.1308411214953271), ('outside_campus', 0.1308411214953271), ('Healthy', 0.1308411214953271), ('fastfood', 0.1308411214953271), ('Pizza:', 0.08411214953271028)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.1308411214953271), ('Dessert', 0.1308411214953271), ('Chinese', 0.1308411214953271), ('Bars', 0.1308411214953271), ('outside_campus', 0.1308411214953271), ('Healthy', 0.1308411214953271), ('fastfood', 0.1308411214953271), ('Pizza:', 0.08411214953271028)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('extreme', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0), ('science_tech', 0.0)]
+
+trent
+
+Food Probabilities
+[('Dining', 0.12730627306273062), ('Dessert', 0.12730627306273062), ('Chinese', 0.12730627306273062), ('Bars', 0.12730627306273062), ('outside_campus', 0.12730627306273062), ('Healthy', 0.12730627306273062), ('fastfood', 0.12730627306273062), ('Pizza:', 0.1088560885608856)]
+Activities Probabilities
+[('hiking', 0.1111111111111111), ('extreme', 0.1111111111111111), ('entertainment', 0.1111111111111111), ('nature', 0.09523809523809523), ('concerts', 0.09523809523809523), ('kayaking', 0.09523809523809523), ('sports', 0.09523809523809523), ('movies', 0.09523809523809523), ('art_history', 0.09523809523809523), ('science_tech', 0.09523809523809523)]
+
+trent
+
+Food Probabilities
+[('Dessert', 0.12783318223028106), ('Dining', 0.12692656391659113), ('Chinese', 0.12692656391659113), ('Bars', 0.12692656391659113), ('outside_campus', 0.12692656391659113), ('Healthy', 0.12692656391659113), ('fastfood', 0.12692656391659113), ('Pizza:', 0.11060743427017226)]
+Activities Probabilities
+[('hiking', 0.1111111111111111), ('extreme', 0.1111111111111111), ('entertainment', 0.1111111111111111), ('nature', 0.09523809523809523), ('concerts', 0.09523809523809523), ('kayaking', 0.09523809523809523), ('sports', 0.09523809523809523), ('movies', 0.09523809523809523), ('art_history', 0.09523809523809523), ('science_tech', 0.09523809523809523)]
+
+trent
+
+Food Probabilities
+[('Pizza:', 0.12643678160919541), ('Dessert', 0.125552608311229), ('Dining', 0.1246684350132626), ('Chinese', 0.1246684350132626), ('Bars', 0.1246684350132626), ('outside_campus', 0.1246684350132626), ('Healthy', 0.1246684350132626), ('fastfood', 0.1246684350132626)]
+Activities Probabilities
+[('hiking', 0.1111111111111111), ('extreme', 0.1111111111111111), ('entertainment', 0.1111111111111111), ('nature', 0.09523809523809523), ('concerts', 0.09523809523809523), ('kayaking', 0.09523809523809523), ('sports', 0.09523809523809523), ('movies', 0.09523809523809523), ('art_history', 0.09523809523809523), ('science_tech', 0.09523809523809523)]
+
+trent
+
+Food Probabilities
+[('Pizza:', 0.1264266900790167), ('Dessert', 0.12554872695346794), ('Dining', 0.12467076382791922), ('Chinese', 0.12467076382791922), ('Bars', 0.12467076382791922), ('outside_campus', 0.12467076382791922), ('Healthy', 0.12467076382791922), ('fastfood', 0.12467076382791922)]
+Activities Probabilities
+[('hiking', 0.1111111111111111), ('extreme', 0.1111111111111111), ('entertainment', 0.1111111111111111), ('nature', 0.09523809523809523), ('concerts', 0.09523809523809523), ('kayaking', 0.09523809523809523), ('sports', 0.09523809523809523), ('movies', 0.09523809523809523), ('art_history', 0.09523809523809523), ('science_tech', 0.09523809523809523)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1264266900790167), ('Dessert', 0.12554872695346794), ('Dining', 0.12467076382791922), ('Chinese', 0.12467076382791922), ('Bars', 0.12467076382791922), ('outside_campus', 0.12467076382791922), ('Healthy', 0.12467076382791922), ('fastfood', 0.12467076382791922)]
+Activities Probabilities
+[('hiking', 0.1111111111111111), ('extreme', 0.1111111111111111), ('entertainment', 0.1111111111111111), ('nature', 0.09523809523809523), ('concerts', 0.09523809523809523), ('kayaking', 0.09523809523809523), ('sports', 0.09523809523809523), ('movies', 0.09523809523809523), ('art_history', 0.09523809523809523), ('science_tech', 0.09523809523809523)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.12717770034843207), ('Dessert', 0.1254355400696864), ('Dining', 0.12456445993031359), ('Chinese', 0.12456445993031359), ('Bars', 0.12456445993031359), ('outside_campus', 0.12456445993031359), ('Healthy', 0.12456445993031359), ('fastfood', 0.12456445993031359)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.1278969957081545), ('Dessert', 0.12532188841201716), ('Dining', 0.12446351931330472), ('Chinese', 0.12446351931330472), ('Bars', 0.12446351931330472), ('outside_campus', 0.12446351931330472), ('Healthy', 0.12446351931330472), ('fastfood', 0.12446351931330472)]
+Activities Probabilities
+[('hiking', 0.10843373493975904), ('extreme', 0.10843373493975904), ('entertainment', 0.10843373493975904), ('nature', 0.0963855421686747), ('concerts', 0.0963855421686747), ('kayaking', 0.0963855421686747), ('sports', 0.0963855421686747), ('movies', 0.0963855421686747), ('art_history', 0.0963855421686747), ('science_tech', 0.0963855421686747)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.12781954887218044), ('Dessert', 0.12531328320802004), ('Dining', 0.12447786131996658), ('Chinese', 0.12447786131996658), ('Bars', 0.12447786131996658), ('outside_campus', 0.12447786131996658), ('Healthy', 0.12447786131996658), ('fastfood', 0.12447786131996658)]
+Activities Probabilities
+[('hiking', 0.10679611650485436), ('extreme', 0.10679611650485436), ('entertainment', 0.10679611650485436), ('nature', 0.0970873786407767), ('concerts', 0.0970873786407767), ('kayaking', 0.0970873786407767), ('sports', 0.0970873786407767), ('movies', 0.0970873786407767), ('art_history', 0.0970873786407767), ('science_tech', 0.0970873786407767)]
+
+trent
+
+Food Probabilities
+[('Pizza', 0.12780082987551866), ('Dessert', 0.12531120331950207), ('Dining', 0.12448132780082988), ('Chinese', 0.12448132780082988), ('Bars', 0.12448132780082988), ('outside_campus', 0.12448132780082988), ('Healthy', 0.12448132780082988), ('fastfood', 0.12448132780082988)]
+Activities Probabilities
+[('hiking', 0.10619469026548672), ('extreme', 0.10619469026548672), ('entertainment', 0.10619469026548672), ('nature', 0.09734513274336283), ('concerts', 0.09734513274336283), ('kayaking', 0.09734513274336283), ('sports', 0.09734513274336283), ('movies', 0.09734513274336283), ('art_history', 0.09734513274336283), ('science_tech', 0.09734513274336283)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12780082987551866), ('Dessert', 0.12531120331950207), ('Dining', 0.12448132780082988), ('Chinese', 0.12448132780082988), ('Bars', 0.12448132780082988), ('outside_campus', 0.12448132780082988), ('Healthy', 0.12448132780082988), ('fastfood', 0.12448132780082988)]
+Activities Probabilities
+[('hiking', 0.10619469026548672), ('extreme', 0.10619469026548672), ('entertainment', 0.10619469026548672), ('nature', 0.09734513274336283), ('concerts', 0.09734513274336283), ('kayaking', 0.09734513274336283), ('sports', 0.09734513274336283), ('movies', 0.09734513274336283), ('art_history', 0.09734513274336283), ('science_tech', 0.09734513274336283)]
+
+Bob
+
+Food Probabilities
+[('Pizza', 0.13333333333333333), ('Dining', 0.12380952380952381), ('Dessert', 0.12380952380952381), ('Chinese', 0.12380952380952381), ('Bars', 0.12380952380952381), ('outside_campus', 0.12380952380952381), ('Healthy', 0.12380952380952381), ('fastfood', 0.12380952380952381)]
+Activities Probabilities
+[('hiking', 0.3333333333333333), ('science_tech', 0.3333333333333333), ('entertainment', 0.3333333333333333), ('nature', 0.0), ('concerts', 0.0), ('extreme', 0.0), ('kayaking', 0.0), ('sports', 0.0), ('movies', 0.0), ('art_history', 0.0)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12778235779060182), ('Dessert', 0.12530915086562242), ('Dining', 0.12448474855729597), ('Chinese', 0.12448474855729597), ('Bars', 0.12448474855729597), ('outside_campus', 0.12448474855729597), ('Healthy', 0.12448474855729597), ('fastfood', 0.12448474855729597)]
+Activities Probabilities
+[('hiking', 0.10619469026548672), ('extreme', 0.10619469026548672), ('entertainment', 0.10619469026548672), ('nature', 0.09734513274336283), ('concerts', 0.09734513274336283), ('kayaking', 0.09734513274336283), ('sports', 0.09734513274336283), ('movies', 0.09734513274336283), ('art_history', 0.09734513274336283), ('science_tech', 0.09734513274336283)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12778235779060182), ('Dessert', 0.12530915086562242), ('Dining', 0.12448474855729597), ('Chinese', 0.12448474855729597), ('Bars', 0.12448474855729597), ('outside_campus', 0.12448474855729597), ('Healthy', 0.12448474855729597), ('fastfood', 0.12448474855729597)]
+Activities Probabilities
+[('hiking', 0.10619469026548672), ('extreme', 0.10619469026548672), ('entertainment', 0.10619469026548672), ('nature', 0.09734513274336283), ('concerts', 0.09734513274336283), ('kayaking', 0.09734513274336283), ('sports', 0.09734513274336283), ('movies', 0.09734513274336283), ('art_history', 0.09734513274336283), ('science_tech', 0.09734513274336283)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12778235779060182), ('Dessert', 0.12530915086562242), ('Dining', 0.12448474855729597), ('Chinese', 0.12448474855729597), ('Bars', 0.12448474855729597), ('outside_campus', 0.12448474855729597), ('Healthy', 0.12448474855729597), ('fastfood', 0.12448474855729597)]
+Activities Probabilities
+[('hiking', 0.10619469026548672), ('extreme', 0.10619469026548672), ('entertainment', 0.10619469026548672), ('nature', 0.09734513274336283), ('concerts', 0.09734513274336283), ('kayaking', 0.09734513274336283), ('sports', 0.09734513274336283), ('movies', 0.09734513274336283), ('art_history', 0.09734513274336283), ('science_tech', 0.09734513274336283)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12778235779060182), ('Dessert', 0.12530915086562242), ('Dining', 0.12448474855729597), ('Chinese', 0.12448474855729597), ('Bars', 0.12448474855729597), ('outside_campus', 0.12448474855729597), ('Healthy', 0.12448474855729597), ('fastfood', 0.12448474855729597)]
+Activities Probabilities
+[('hiking', 0.10619469026548672), ('extreme', 0.10619469026548672), ('entertainment', 0.10619469026548672), ('nature', 0.09734513274336283), ('concerts', 0.09734513274336283), ('kayaking', 0.09734513274336283), ('sports', 0.09734513274336283), ('movies', 0.09734513274336283), ('art_history', 0.09734513274336283), ('science_tech', 0.09734513274336283)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12778235779060182), ('Dessert', 0.12530915086562242), ('Dining', 0.12448474855729597), ('Chinese', 0.12448474855729597), ('Bars', 0.12448474855729597), ('outside_campus', 0.12448474855729597), ('Healthy', 0.12448474855729597), ('fastfood', 0.12448474855729597)]
+Activities Probabilities
+[('hiking', 0.10619469026548672), ('extreme', 0.10619469026548672), ('entertainment', 0.10619469026548672), ('nature', 0.09734513274336283), ('concerts', 0.09734513274336283), ('kayaking', 0.09734513274336283), ('sports', 0.09734513274336283), ('movies', 0.09734513274336283), ('art_history', 0.09734513274336283), ('science_tech', 0.09734513274336283)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12778235779060182), ('Dessert', 0.12530915086562242), ('Dining', 0.12448474855729597), ('Chinese', 0.12448474855729597), ('Bars', 0.12448474855729597), ('outside_campus', 0.12448474855729597), ('Healthy', 0.12448474855729597), ('fastfood', 0.12448474855729597)]
+Activities Probabilities
+[('hiking', 0.10619469026548672), ('extreme', 0.10619469026548672), ('entertainment', 0.10619469026548672), ('nature', 0.09734513274336283), ('concerts', 0.09734513274336283), ('kayaking', 0.09734513274336283), ('sports', 0.09734513274336283), ('movies', 0.09734513274336283), ('art_history', 0.09734513274336283), ('science_tech', 0.09734513274336283)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12717882504841835), ('Dessert', 0.12524209167204647), ('Dining', 0.12459651387992253), ('Chinese', 0.12459651387992253), ('Bars', 0.12459651387992253), ('outside_campus', 0.12459651387992253), ('Healthy', 0.12459651387992253), ('fastfood', 0.12459651387992253)]
+Activities Probabilities
+[('hiking', 0.10300429184549356), ('extreme', 0.10300429184549356), ('entertainment', 0.10300429184549356), ('nature', 0.09871244635193133), ('concerts', 0.09871244635193133), ('kayaking', 0.09871244635193133), ('sports', 0.09871244635193133), ('movies', 0.09871244635193133), ('art_history', 0.09871244635193133), ('science_tech', 0.09871244635193133)]
+
+Trent
+
+Food Probabilities
+[('Pizza', 0.12759270898805783), ('Dining', 0.12507856693903205), ('outside_campus', 0.12507856693903205), ('Dessert', 0.12445003142677562), ('Chinese', 0.12445003142677562), ('Bars', 0.12445003142677562), ('Healthy', 0.12445003142677562), ('fastfood', 0.12445003142677562)]
+Activities Probabilities
+[('hiking', 0.10300429184549356), ('extreme', 0.10300429184549356), ('entertainment', 0.10300429184549356), ('nature', 0.09871244635193133), ('concerts', 0.09871244635193133), ('kayaking', 0.09871244635193133), ('sports', 0.09871244635193133), ('movies', 0.09871244635193133), ('art_history', 0.09871244635193133), ('science_tech', 0.09871244635193133)]
+
+Sush
+
+Food Probabilities
+[('Dining', 0.125), ('Dessert', 0.125), ('Pizza', 0.125), ('Chinese', 0.125), ('Bars', 0.125), ('outside_campus', 0.125), ('Healthy', 0.125), ('fastfood', 0.125)]
+Activities Probabilities
+[('art_history', 0.15384615384615385), ('science_tech', 0.15384615384615385), ('entertainment', 0.15384615384615385), ('nature', 0.07692307692307693), ('concerts', 0.07692307692307693), ('hiking', 0.07692307692307693), ('extreme', 0.07692307692307693), ('kayaking', 0.07692307692307693), ('sports', 0.07692307692307693), ('movies', 0.07692307692307693)]
+
+Sush
+
+Food Probabilities
+[('Dining', 0.16363636363636364), ('Pizza', 0.12727272727272726), ('Chinese', 0.12727272727272726), ('Healthy', 0.12727272727272726), ('FastFood', 0.12727272727272726), ('Dessert', 0.10909090909090909), ('Bars', 0.10909090909090909), ('OutsideCampus', 0.10909090909090909)]
+Activities Probabilities
+[('Art_History', 0.10619469026548672), ('Science_Tech', 0.10619469026548672), ('Entertainment', 0.10619469026548672), ('Nature', 0.09734513274336283), ('Concerts', 0.09734513274336283), ('Hiking', 0.09734513274336283), ('Extreme', 0.09734513274336283), ('Kayaking', 0.09734513274336283), ('Sports', 0.09734513274336283), ('Movies', 0.09734513274336283)]
+
