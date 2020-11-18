@@ -1,4 +1,4 @@
-from flask import session, render_template, redirect, request, url_for, flash, g
+from flask import render_template, redirect, request, url_for, flash
 from flask_login import login_user, logout_user, login_required, \
     current_user
 from . import auth
@@ -11,9 +11,6 @@ from .forms import LoginForm, RegistrationForm, ChangePasswordForm,\
 
 @auth.before_app_request
 def before_request():
-    g.user = None
-    if 'user_id' in session:
-        g.user = User.query.filter_by(id = session['user_id']).first()
     if current_user.is_authenticated:
         current_user.ping()
         if not current_user.confirmed \
@@ -60,6 +57,13 @@ def register():
         user = User(email=form.email.data.lower(),
                     username=form.username.data,
                     password=form.password.data)
+        temp1 = form.interest1.data
+        set_interest(user, temp1)
+        temp2 = form.interest2.data
+        set_interest(user, temp2)
+        temp3 = form.interest3.data
+        set_interest(user, temp3)
+        ########
         db.session.add(user)
         db.session.commit()
         token = user.generate_confirmation_token()
@@ -170,3 +174,59 @@ def change_email(token):
     else:
         flash('Invalid request.')
     return redirect(url_for('main.index'))
+
+
+def set_interest(user, interest):
+    if (interest == 'Fastfood'):
+        user.set_fastfood()
+        
+    elif(interest == 'Dining'):
+        user.set_dining()
+        
+    elif(interest == 'Dessert'):
+        user.set_dessert()
+        
+    elif(interest == 'Chinese'):
+        user.set_chinese()
+	
+    elif(interest == 'Pizza'):
+        user.set_pizza()
+        
+    elif(interest == 'Healthy'):
+        user.set_healthy()
+        
+    elif(interest == 'Bars'):
+        user.set_bars()
+        
+    elif(interest == 'Outside Campus'):
+        user.set_outside_campus()
+        
+    elif(interest == 'Nature'):
+        user.set_nature()
+        
+    elif(interest == 'Hiking'):
+        user.set_hiking()
+        
+    elif(interest == 'Kayaking'):
+        user.set_kayaking()
+        
+    elif(interest == 'Extreme sports'):
+        user.set_extreme_sports()
+        
+    elif(interest == 'Sports'):
+        user.set_sports()
+        
+    elif(interest == 'Movies'):
+        user.set_movies()
+        
+    elif(interest == 'Concerts'):
+        user.set_concerts()
+        
+    elif(interest == 'Art History'):
+        user.set_art_history()
+        
+    elif(interest == 'Science & Technology'):
+        user.set_science_tech()
+        
+    else:
+        user.set_entertainment()

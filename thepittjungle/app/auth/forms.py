@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, SelectField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo
 from wtforms import ValidationError
 from ..models import User
@@ -24,6 +24,23 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Password', validators=[
         DataRequired(), EqualTo('password2', message='Passwords must match.')])
     password2 = PasswordField('Confirm password', validators=[DataRequired()])
+
+    interest1 = SelectField(u'Favourite type of food', choices=[('Fast Food', 'Fast Food'), 
+                            ('Dining', 'Dining'), ('Dessert', 'Dessert'), ('Pizza', 'Pizza'), ('Chinese', 'Chinese'),
+                            ('Healthy', 'Healthy'), ('Bars', 'Bars'), ('Outside campus', 'Outside campus')])
+
+    interest2 = SelectField(u'Interest #1', choices=[('Nature', 'Nature'), 
+                            ('Hiking', 'Hiking'), ('Kayaking', 'Kayaking'), ('Extreme sports', 'Extreme sports'),
+                            ('Sports', 'Sports'), ('Movies', 'Movies'), ('Concerts', 'Concerts'),
+                            ('Art History', 'Art History'), ('Science & Technology', 'Science & Technology'),
+                            ('Entertainment', 'Entertainment')])
+
+    interest3 = SelectField(u'Interest #2', choices=[('Nature', 'Nature'), 
+                            ('Hiking', 'Hiking'), ('Kayaking', 'Kayaking'), ('Extreme sports', 'Extreme sports'),
+                            ('Sports', 'Sports'), ('Movies', 'Movies'), ('Concerts', 'Concerts'),
+                            ('Art History', 'Art History'), ('Science & Technology', 'Science & Technology'),
+                            ('Entertainment', 'Entertainment')])
+
     submit = SubmitField('Register')
 
     def validate_email(self, field):
